@@ -87,20 +87,20 @@ Number and name of feature:Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: 1 hour 30 minutes
 
-Start time: _____
+Start time: 3:00EST
 
-Finish time: _____
+Finish time: 3:30EST
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 minutes
 
 ## Feature 3
 
 Number and name of feature:Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minutes
 
-Start time: _____
+Start time: 3:30EST
 
-Finish time: _____
+Finish time: 3:45EST
 
-Actual time needed to complete: _____
+Actual time needed to complete: 15 minutes
