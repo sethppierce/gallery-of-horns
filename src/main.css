@@ -1,0 +1,35 @@
+main {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  overflow: hidden;
+}
+
+#welcome {
+  width: 90%;
+background-color: rgb(97, 95, 95);
+color: greenyellow;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+height: fit-content;
+}
+
+#welcome div{
+  font-size: 2vw;
+}
+
+#welcome p {
+  font-size: .7vw;
+}
+
+#cards{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-between;
+}
