@@ -33,3 +33,19 @@ height: fit-content;
   gap: 2vw;
   justify-content: space-between;
 }
+
+#searchDiv {
+  width: 100%;
+  text-align: center;
+}
+
+#searchBar {
+  width: 40%;
+  text-align: center;
+  height: 3vw;
+  border-radius: 30px;
+  background-color: greenyellow;
+  color: #282c34;
+  font-size: 2vw;
+}
+

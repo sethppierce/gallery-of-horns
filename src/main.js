@@ -3,12 +3,12 @@ import Beast from './beast'
 import './main.css'
 import Alert from 'react-bootstrap/Alert';
 
-
 export default class main extends Component {
   constructor(props){
     super(props);
     this.state = {
       show: true,
+      input: ''
     }
   }
   
@@ -17,19 +17,36 @@ export default class main extends Component {
     show: false,
   });
   };
+  
+  setInput = (value) => {
+    this.setState({
+      input: value,
+    });
+    };
 
-  render() {
-    let dataArr = this.props.data.map((thisBeast, index) => {
-      return <Beast thisBeast = {thisBeast} key={index} openModal={this.props.openModal} closeModal={this.props.closeModal} handleModal={this.props.handleModal} id/>
+    
+    
+    render() {
+  
+    let filteredBeasts = this.props.data.filter(beast => {
+      return beast.title.toLowerCase().includes(this.state.input.toLowerCase())
     })
+  
+    let filterDisplay = filteredBeasts.map((thisBeast, index) => {
+      return <Beast thisBeast = {thisBeast} key={index} openModal={this.props.openModal} closeModal={this.props.closeModal} handleModal={this.props.handleModal} id={thisBeast._id}/>
+    })
+    console.log(filterDisplay)
     return (
       <main>
         <Alert variant="dark" id='welcome' show={this.state.show} onClick={this.setThis}>
             <Alert.Heading>Welcome to The Horned Beast Gallery! Drop Your Favorite Horned Beasts a Like!</Alert.Heading>
             <p>click on this message to dismiss and have fun!</p>
         </Alert>
+        <div id='searchDiv'>
+          <input value={this.state.input} onChange={e => this.setInput(e.target.value)}type='search' id='searchBar'  placeholder='Search For Horned Animals Here!'></input>
+        </div>
         <div id='cards'>
-          {dataArr}
+          {filterDisplay}
         </div>
       </main>
     )

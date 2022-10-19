@@ -25,10 +25,10 @@ handleClick = (e) => {
 
   render() {
     return (
-      <Card>
+      <Card className='cards'>
         <Card.Img src={this.props.thisBeast.image_url} alt={this.props.thisBeast.description} title={this.props.thisBeast.description} onClick={this.handleLikes}/>
         <Card.Title >{this.props.thisBeast.title}</Card.Title>
-        <button onClick={this.handleClick} id={this.props.thisBeast._id} className='cardBtn'> Learn More!</button>
+        <button onClick={this.handleClick} id={this.props.id} className='cardBtn'> Learn More!</button>
         <Card.Text id='likes'>💕{this.state.likes} likes</Card.Text>
       </Card>
     )
