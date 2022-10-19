@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card';
 import './beast.css'
 
+
+
 export default class beast extends Component {
   constructor(props){
     super(props);
@@ -16,12 +18,17 @@ handleLikes = () => {
   });
 };
 
+handleClick = (e) => {
+  this.props.handleModal(e); 
+  this.props.openModal()
+} 
+
   render() {
     return (
       <Card>
         <Card.Img src={this.props.thisBeast.image_url} alt={this.props.thisBeast.description} title={this.props.thisBeast.description} onClick={this.handleLikes}/>
-        <Card.Title>{this.props.thisBeast.title}</Card.Title>
-        <Card.Text>{this.props.thisBeast.description}</Card.Text>
+        <Card.Title >{this.props.thisBeast.title}</Card.Title>
+        <button onClick={this.handleClick} id={this.props.thisBeast._id} className='cardBtn'> Learn More!</button>
         <Card.Text id='likes'>💕{this.state.likes} likes</Card.Text>
       </Card>
     )

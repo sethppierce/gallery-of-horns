@@ -1,8 +1,8 @@
 import React, { Component} from 'react'
 import Beast from './beast'
 import './main.css'
-import data from './data.json'
 import Alert from 'react-bootstrap/Alert';
+
 
 export default class main extends Component {
   constructor(props){
@@ -19,8 +19,8 @@ export default class main extends Component {
   };
 
   render() {
-    let dataArr = data.map((thisBeast, index) => {
-      return <Beast thisBeast = {thisBeast} key={index}/>
+    let dataArr = this.props.data.map((thisBeast, index) => {
+      return <Beast thisBeast = {thisBeast} key={index} openModal={this.props.openModal} closeModal={this.props.closeModal} handleModal={this.props.handleModal} id/>
     })
     return (
       <main>

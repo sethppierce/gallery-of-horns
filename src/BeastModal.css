@@ -1,0 +1,47 @@
+.modal-content {
+  background-color: greenyellow;
+  animation: fadeIn 1s;
+  text-align: center;
+  font-size: 2vw;
+}
+
+@keyframes fadeIn {
+  0% { scale: 0; }
+  100% { scale: 1; }
+}
+
+#modalHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalTtl {
+  text-align: center;
+  border-bottom: none; 
+  padding-bottom: 20;
+  font-size: 3vw;
+}
+
+.modal-content img {
+  border-top-color: black;
+  width: 100%;
+  height: 20vw;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-content button {
+  background-color:rgb(97, 95, 95);
+  border-color: #282c34;
+  color: greenyellow;
+  border-width: 3px;
+}
+
+.modal-content button:hover{
+  background-color: greenyellow;
+  color: #282c34;
+  border-color: rgb(97, 95, 95);
+}
