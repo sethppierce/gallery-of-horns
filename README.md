@@ -36,7 +36,7 @@ Finish time: 3:45EST
 
 Actual time needed to complete: 15 minutes
 
-## Feature 4 
+## Feature 4
 
 Number and name of feature: Feature #4: Display a Modal
 
@@ -45,5 +45,17 @@ Estimate of time needed to complete: 20minutes
 Start time: 3EST
 
 Finish time: 3:20EST
+
+Actual time needed to complete: 30 minutes
+
+## Feature 5
+
+Number and name of feature: Feature #4: Dropdown
+
+Estimate of time needed to complete: 45minutes
+
+Start time: 3EST
+
+Finish time: 3:30ST
 
 Actual time needed to complete: 30 minutes
