@@ -34,6 +34,7 @@ export default class main extends Component {
     })
   
     let filterDisplay = filteredBeasts.map((thisBeast, index) => {
+
       return <Beast thisBeast = {thisBeast} key={index} openModal={this.props.openModal} closeModal={this.props.closeModal} handleModal={this.props.handleModal} id={thisBeast._id}/>
     })
     console.log(filterDisplay)

@@ -17,7 +17,8 @@ export default class Dropbar extends Component {
     let hornsDrop = this.props.horns.map((horn,index) => {
       return <Dropdown.Item href="#/action-1" id={horn} onClick={this.props.handleHorn} key={index}>{horn}</Dropdown.Item>
     })
-  
+
+
     console.log(this.props.horns)
     return (
     <Dropdown>
@@ -25,7 +26,7 @@ export default class Dropbar extends Component {
         {this.props.label}
       </Dropdown.Toggle>
 
-      <Dropdown.Menu>
+      <Dropdown.Menu >
         {hornsDrop}
       </Dropdown.Menu>
     </Dropdown>

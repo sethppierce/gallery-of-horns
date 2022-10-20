@@ -4,7 +4,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
-  overflow: hidden;
 }
 
 #welcome {
@@ -52,7 +51,6 @@ height: fit-content;
   background-color: greenyellow;
   width: 15vw;
 }
-
 
 
 #searchBar {

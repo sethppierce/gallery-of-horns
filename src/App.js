@@ -39,7 +39,7 @@ export default class App extends Component {
   render() {
     let hornsArr = data.map(beast => beast.horns)
     let uniqueHorns = ['All Horns', ...new Set(hornsArr)] 
-    console.log(this.handleHorn)
+    console.log(hornsArr)
     return (
       <>
         <Header />
