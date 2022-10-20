@@ -26,13 +26,13 @@ export default class App extends Component {
   handleHorn = (event) => {
     let newHorn = data.filter(element => {
       if(event.target.id === 'All Horns'){
-        this.setState({label: 'All Horns', data: data})
+        return this.setState({label: 'All Horns', data: data})
       }
       else {
         return element.horns.toString() === event.target.id}
       })
       if(event.target.id !== 'All Horns'){
-        this.setState({data: newHorn, label: `Horns: ${event.target.id}`})
+        return this.setState({data: newHorn, label: `Horns: ${event.target.id}`})
       }
   }
   
