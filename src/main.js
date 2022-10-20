@@ -2,6 +2,7 @@ import React, { Component} from 'react'
 import Beast from './beast'
 import './main.css'
 import Alert from 'react-bootstrap/Alert';
+import Dropbar from './Dropbar';
 
 export default class main extends Component {
   constructor(props){
@@ -43,6 +44,7 @@ export default class main extends Component {
             <p>click on this message to dismiss and have fun!</p>
         </Alert>
         <div id='searchDiv'>
+          <Dropbar horns={this.props.horns} handleHorn={this.props.handleHorn} label={this.props.label} id='dropbar'/>
           <input value={this.state.input} onChange={e => this.setInput(e.target.value)}type='search' id='searchBar'  placeholder='Search For Horned Animals Here!'></input>
         </div>
         <div id='cards'>

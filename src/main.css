@@ -31,13 +31,29 @@ height: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
-  justify-content: space-between;
 }
 
 #searchDiv {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+#dropdown-basic{
+  width: 15vw;
+  height: 3vw;
+  background-color: greenyellow;
+  color:  rgb(97, 95, 95);
+  font-size: 1vw;
+}
+
+.dropdown-menu{
+  background-color: greenyellow;
+  width: 15vw;
+}
+
+
 
 #searchBar {
   width: 40%;
